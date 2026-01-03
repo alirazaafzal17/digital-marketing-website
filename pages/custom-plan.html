@@ -1,0 +1,108 @@
+<html>
+<!-- Header -->
+<head>
+    <title>Custom-plans</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<script src="../java.js"></script>
+<body>
+    <header>
+        <img src="../image/logo.jpeg" ; alt="ANZ logo" ; class="logo" />
+        <div class="header-text">
+            <h1>ANZ Custom Plan</h1>
+            <p>Create your personalized digital marketing plan.</p>
+            <div\>
+    </header>
+
+    <hr />
+
+    <!-- nav -->
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="packages.html">Packages</a> |
+        <a href="custom-plan.html">Custom Plan</a> |
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <hr />
+
+    <!-- forms -->
+    <section>
+        <h2 style="text-align:center">Build Your Own Plan</h2>
+        <form onsubmit="return calculateTotal()">
+            <!-- name -->
+            <label for="name">Name</label><br />
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name:"<br /><br />
+            <br />
+            <!-- email -->
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email"<br /><br />
+            <br />
+            <!-- checklist -->
+            <label>Select Services:</label>
+            <br />
+            <input type="checkbox" id="content" name="services " value="Content Writing" />
+            <label for="content">Content Writing</label>
+            <br />
+            <input type="checkbox" id="search" name="services" value="Search Engine Optimization" />
+            <label for="search">Search Engine Optimization</label>
+            <br />
+            <input type="checkbox" id="google" name="services" value="Google Ads" />
+            <label for="google">Google Ads</label>
+            <br />
+            <input type="checkbox" id="meta" name="services" value="Meta Ads" />
+            <label for="meta">Meta Ads</label>
+            <br />
+            <input type="checkbox" id="video" name="services" value="Video Editing" />
+            <label for="video">Video Editing</label>
+            <br />
+            <input type="checkbox" id="post" name="services" value="Post Scheduling" />
+            <label for="post">Post Scheduling</label>
+            <br />
+            <input type="checkbox" id="emaile" name="services" value="Email Marketing" />
+            <label for="emaile">Email Marketing</label>
+            <br />
+            <input type="checkbox" id="social" name="services" value="Social Media Marketing" />
+            <label for="social">Social Media Marketing</label>
+            <br />
+            <input type="checkbox" id="analytics" name="services" value="Analytics and reporting " />
+            <label for="analytics">Analytics and reporting </label>
+            <br />
+            <input type="checkbox" id="media" name="services" value="Social Media Optimization " />
+            <label for="media">Social Media Optimization </label>
+            <br />
+            <br />
+            <label for="days">Number of Days:</label><br />
+            <input type="number" id="days" name="days" min="1"
+                   placeholder="Number of Days" /><br />
+            <br />
+            <button type="button" onclick="calculateTotal()">Calculate Price</button>
+            <br /><br />
+
+            <label for="totalPrice">Total Price</label><br />
+            <input type="text" id="totalPrice" readonly
+                   placeholder="Calculated price will appear here" />
+            <br />
+            <p>Click Submit To Choose This Plan:</p>
+            <a href="thankyou.html">
+                <button type="button">Submit</button>
+            </a>
+        </form>
+    </section>
+    <hr />
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>
+            Digital Marketing Recommendation Website
+            -  Ali Raza Afzal, Abdul Nafhay, and Zakaullah Khan
+        </p>
+        <p>ICT Project | 2025</p>
+
+    </footer>
+
+
+</body>
+</html>
